@@ -1,0 +1,29 @@
+/* 스테이터스바가 위에 고정될 수 있는 이유를 생각해볼 것. */
+.status-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px 3px;
+  box-sizing: border-box;
+}
+.status-bar__column {
+  width: 33%;
+}
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.status-bar__column .fa-battery-three-quarters {
+  margin: 0 5px;
+}
